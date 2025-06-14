@@ -1,0 +1,70 @@
+.group-hi{
+  display: flex;
+  margin: 100px 40px;
+}
+
+.logo {
+  ul{ 
+    display: flex;
+    list-style: none;
+    padding: 0 150px;
+    justify-content: space-between;
+  }
+
+}
+.group-habilities{
+  display: flex;
+  align-items: center;
+}
+
+.habilities{
+  font-size: 15px;
+  padding: 8px 10px  0px 10px;
+  writing-mode: sideways-rl;
+  transform: rotate(180deg);     
+  color: white;
+}
+
+.whoami {
+  display: flex;
+  flex-direction: column;
+  ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  img{
+    width: 40px;
+    height: 40px;
+    background-color: var(--background-icon);
+  }
+}
+
+.hi-section{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 36vw;
+  font-size: 36px;
+}
+
+.apresentation{
+    font-size: 24px;
+    font-family: 'Roboto';
+  }
+
+.about-me{
+    font-size: 18px;
+    font-family: 'Roboto';
+}
+
+.hobby{
+  font-family: 'Playfair Display';
+  font-style: italic;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-title{
+  padding: 0px 30px;
+}
