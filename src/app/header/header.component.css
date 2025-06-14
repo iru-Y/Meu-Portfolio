@@ -30,9 +30,12 @@
 
 .group-habilities {
   display: flex;
-  align-items: center;
 }
-
+.best-skills{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
 .habilities {
   font-size: 15px;
   padding: 8px 10px 0px 10px;
@@ -54,7 +57,7 @@
   font-family: "Roboto";
 }
 
-.about-me {
+.about-apresentation {
   font-size: 18px;
   font-family: "Roboto";
 }
@@ -97,9 +100,26 @@
   width: 130px;
   height: 100px;
   left: 160px;
+  bottom: 390px;
 }
+
+.hire-us{
+  position: absolute;
+  bottom: 430px;
+  left: 380px;
+  width: 200px;
+  height: 200px;
+}
+
 .me{
   position: absolute;
   bottom: 0px;
   left: 130px;
+}
+.asterisc{
+  position: absolute;
+  top: 650px;
+  right: -55px;
+  width: 230px;
+  height: 230px;
 }

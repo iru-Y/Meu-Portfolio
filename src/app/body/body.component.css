@@ -1,0 +1,22 @@
+.body-section{
+    padding: 120px 218px 0px 218px;
+    
+}
+
+.about-me {
+    width: 50%;
+    p{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        color: var(--secondary-color);
+    }
+    h2{
+        font-size: 36px;
+    }
+}
+
+.skills{
+    font-family: "Playfair Display";
+    font-style: italic;
+    color: var(--secondary-color);
+}
