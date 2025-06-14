@@ -1,6 +1,20 @@
 .group-hi{
   display: flex;
   margin: 100px 40px;
+  .whoami {
+    display: flex;
+    flex-direction: column;
+    ul{
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+    }
+    .skill-icon{
+      width: 40px;
+      height: 40px;
+      background-color: var(--background-icon);
+    }
+  }
 }
 
 .logo {
@@ -12,6 +26,7 @@
   }
 
 }
+
 .group-habilities{
   display: flex;
   align-items: center;
@@ -25,20 +40,6 @@
   color: white;
 }
 
-.whoami {
-  display: flex;
-  flex-direction: column;
-  ul{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-  }
-  img{
-    width: 40px;
-    height: 40px;
-    background-color: var(--background-icon);
-  }
-}
 
 .hi-section{
   display: flex;
@@ -46,6 +47,7 @@
   gap: 20px;
   margin-left: 36vw;
   font-size: 36px;
+  
 }
 
 .apresentation{
@@ -63,8 +65,29 @@
   font-style: italic;
   justify-content: center;
   align-items: center;
+  color: var(--secondary-color);
 }
 
 .center-title{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
   padding: 0px 30px;
+  a{
+     display: flex;
+     align-items: center;
+    width: 150px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    .download-cv{
+      width: 40px;
+      height: 40px;
+    }
+  }
 }
