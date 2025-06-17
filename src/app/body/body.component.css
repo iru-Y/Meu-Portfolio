@@ -3,20 +3,47 @@
     
 }
 
-.about-me {
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     width: 50%;
-    p{
+    .about-me{
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         color: var(--secondary-color);
+        display: flex;
+        gap: 8px;
     }
     h2{
         font-size: 36px;
     }
+    .work-text{
+        font-size: 0.7rem;
+
+    }
+    .asterisc-about{
+        
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+
+.stack{
+    font-family: "Playfair Display";
+    font-style: italic;
+    color: var(--secondary-color);
 }
 
 .skills{
-    font-family: "Playfair Display";
-    font-style: italic;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    gap: 8px;
+}
+
+.check{
     color: var(--secondary-color);
 }
