@@ -1,6 +1,6 @@
 .body-section{
     padding: 120px 218px 0px 218px;
-    
+    display: flex;
 }
 
 .about {
@@ -23,7 +23,6 @@
 
     }
     .asterisc-about{
-        
         width: 20px;
         height: 20px;
     }
@@ -46,4 +45,22 @@
 
 .check{
     color: var(--secondary-color);
+}
+
+.grid-status{
+    display: flex;
+    flex-direction: column;
+    margin-left: 6vw;
+    margin-top: 8vh;
+}
+
+.grid-status-one{
+    display: flex;    
+    gap: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.grid-status-two{
+    display: flex;
+    gap: 1.5vw;
 }

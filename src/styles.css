@@ -19,6 +19,8 @@ body {
     --background-icon: #313131;
     --body-color: #161616;
     --secondary-color: #adea2d;
+    --border-color: #303030;
+    --primary-container-color: #242424;
 }
 
 img {
