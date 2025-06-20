@@ -1,6 +1,11 @@
+.header-section{
+     padding-top: 2.5vh;
+}
+
 .group-hi {
   display: flex;
   margin: 150px 40px;
+
 }
 
 .whoami {
@@ -87,7 +92,6 @@
   
 }
 
-
 .arrow-me{
   position: relative;
   width: 130px;
@@ -96,7 +100,6 @@
   top: 10vh;
 }
 
-
 .me{
   position: relative;
   width: 58vw;
@@ -104,6 +107,7 @@
   top: 15vh;
   right: 2vw;
 }
+
 .asterisc{
   position: absolute;
   top: 650px;

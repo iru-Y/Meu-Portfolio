@@ -1,66 +1,40 @@
-.body-section{
-    padding: 10vh 14vw 0px 14vw;
-    display: flex;
+.body-section {
+  padding: 10vh 14vw 0px 14vw;
+  display: flex;
 }
 
 .about {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 50%;
-    .about-me{
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
-        color: var(--secondary-color);
-        display: flex;
-        gap: 8px;
-    }
-    h2{
-        font-size: 36px;
-    }
-    .work-text{
-        font-size: 0.7rem;
-
-    }
-    .asterisc-about{
-        width: 20px;
-        height: 20px;
-    }
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 
-
-
-.stack{
-    font-family: "Playfair Display";
-    font-style: italic;
-    color: var(--secondary-color);
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  align-self: start;
+  gap: 8px;
 }
 
-.skills{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    list-style: none;
-    gap: 8px;
+.check {
+  color: var(--secondary-color);
 }
 
-.check{
-    color: var(--secondary-color);
+.grid-status {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-top: 8vh;
 }
 
-.grid-status{
-    display: flex;
-    flex-direction: column;
-    margin-left: 6vw;
-    margin-top: 8vh;
+.grid-status-one {
+  display: flex;
+  gap: 1.5vw;
+  margin-bottom: 1.5vw;
 }
 
-.grid-status-one{
-    display: flex;    
-    gap: 1.5vw;
-    margin-bottom: 1.5vw;
-}
-
-.grid-status-two{
-    display: flex;
-    gap: 1.5vw;
+.grid-status-two {
+  display: flex;
+  gap: 1.5vw;
 }

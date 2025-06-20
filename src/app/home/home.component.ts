@@ -6,7 +6,7 @@ import { WorksComponent } from "../works/works.component";
 
 @Component({
   selector: 'app-home',
-  imports: [HeaderComponent, AboutMeComponent, StatusComponent, WorksComponent],
+  imports: [HeaderComponent, AboutMeComponent, WorksComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
