@@ -1,7 +1,11 @@
 .work-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
     margin-top: 10vh;
     padding: 10vh 14vw 10vh 14vw;
     background-color: var(--secondary-body-color);
+
 }
 
 .ofer{
@@ -24,7 +28,7 @@ app-title{
     align-items: center;
 }
 
-.first-row-services{
+.row-services{
     display: flex;
-    gap: 3vw;
+    gap: 2vw;
 }
