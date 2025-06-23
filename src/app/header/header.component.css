@@ -23,6 +23,8 @@
   width: 40px;
   height: 40px;
   background-color: var(--background-icon);
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
   max-width: none;
 }
 
@@ -42,6 +44,7 @@
 .best-skills{
   display: flex;
   flex-direction: row;
+  
   align-items: start;
 }
 

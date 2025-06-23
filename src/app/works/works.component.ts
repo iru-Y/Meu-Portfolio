@@ -5,7 +5,7 @@ import { BestServicesCardComponent } from "../components/best-services-card/best
 
 @Component({
   selector: 'app-works',
-  imports: [TitleComponent, BestServicesCardComponent, NgOptimizedImage],
+  imports: [TitleComponent, BestServicesCardComponent],
   templateUrl: './works.component.html',
   styleUrl: './works.component.css'
 })
