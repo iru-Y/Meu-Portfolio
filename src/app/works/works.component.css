@@ -23,3 +23,8 @@ app-title{
     justify-content: center;
     align-items: center;
 }
+
+.first-row-services{
+    display: flex;
+    gap: 3vw;
+}

@@ -20,8 +20,10 @@ body {
     --body-color: #161616;
     --secondary-body-color: #222222;
     --secondary-color: #adea2d;
-    --border-color: #303030;
+    --border-color: #4b4b4b;
     --primary-container-color: #242424;
+    --secondary-container-color: #343434;
+    --top-card-bg: #404040;
 }
 
 img {

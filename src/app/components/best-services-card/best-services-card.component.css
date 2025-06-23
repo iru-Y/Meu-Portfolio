@@ -1,0 +1,19 @@
+.best-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 3vh 2vw 3vh 2vw;
+    height: 40vh;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--secondary-container-color);
+}
+
+.card-top-icon{
+    position: relative;
+    padding: 10px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color:  var(--top-card-bg);
+    bottom: 6.5vh;
+}

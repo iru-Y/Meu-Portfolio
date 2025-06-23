@@ -1,11 +1,11 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 import { TitleComponent } from "../components/title/title.component";
-import { BestServicesContainerComponent } from "../components/best-services-container/best-services-container.component";
+import { BestServicesCardComponent } from "../components/best-services-card/best-services-card.component";
 
 @Component({
   selector: 'app-works',
-  imports: [TitleComponent, BestServicesContainerComponent],
+  imports: [TitleComponent, BestServicesCardComponent],
   templateUrl: './works.component.html',
   styleUrl: './works.component.css'
 })
