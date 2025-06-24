@@ -1,11 +1,10 @@
-.header-section{
-     padding-top: 2.5vh;
+.header-section {
+  padding-top: 2.5vh;
 }
 
 .group-hi {
   display: flex;
   margin: 150px 40px;
-
 }
 
 .whoami {
@@ -41,10 +40,10 @@
   display: flex;
 }
 
-.best-skills{
+.best-skills {
   display: flex;
   flex-direction: row;
-  
+
   align-items: start;
 }
 
@@ -69,7 +68,7 @@
   font-family: "Roboto";
 }
 
-.my-name{
+.my-name {
   font-size: 3rem;
   font-weight: 900;
   color: var(--secondary-color);
@@ -92,10 +91,9 @@
   gap: 30px;
   flex-direction: column;
   padding: 0px 30px;
-  
 }
 
-.arrow-me{
+.arrow-me {
   position: relative;
   width: 130px;
   height: 100px;
@@ -103,7 +101,7 @@
   top: 10vh;
 }
 
-.me{
+.me {
   position: relative;
   width: 58vw;
   height: 58vh;
@@ -111,3 +109,9 @@
   right: 2vw;
 }
 
+.asterisk {
+  position: absolute;
+  top: 650px;
+  right: -75px;
+  
+}

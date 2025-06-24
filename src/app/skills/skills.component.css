@@ -1,7 +1,30 @@
 .asterisk{
-  position: relative;
-  bottom: 14.7vh;
-  right: -75px;
-  width: 230px;
-  height: 230px;
+  position: absolute;
+  top: 324.2vh;
+  left: -3vw;
+  
+}
+
+.skills-section{
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+    padding: 18vh 14vw 10vh 14vw;
+}
+
+.skills-card-section{
+  display: flex;
+  flex-direction: column;
+  gap: 6vh;
+}
+
+.card-row{
+  display: flex;
+  gap: 2vw;
+}
+
+.my-skills-text{
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
 }
