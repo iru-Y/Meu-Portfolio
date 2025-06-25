@@ -1,3 +1,10 @@
+.asterisk{
+  position: absolute;
+  top: 532.2vh;
+  right: -3vw;
+  
+}
+
 .my-projects-section{
     padding: 14vh 14vw 10vh 14vw;    
 }
@@ -10,4 +17,5 @@ header{
 .show-cards{
     display: flex;
     justify-content: space-between;
+
 }
