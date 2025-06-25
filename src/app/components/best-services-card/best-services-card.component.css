@@ -6,7 +6,7 @@
     height: 36vh;
     border: 1px solid var(--border-color);
     border-radius: 5px;
-    background-color: var(--secondary-container-color);
+    background-color: var(--secondary-body-color);
 }
 
 .card-top-icon{

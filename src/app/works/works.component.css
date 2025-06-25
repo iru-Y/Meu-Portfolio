@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 8vh;
     margin-top: 10vh;
-    padding: 10vh 14vw 10vh 14vw;
+    padding: 14vh 14vw 14vh 14vw;
     background-color: var(--secondary-body-color);
 
 }

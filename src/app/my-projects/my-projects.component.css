@@ -1,0 +1,13 @@
+.my-projects-section{
+    padding: 14vh 14vw 10vh 14vw;    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.show-cards{
+    display: flex;
+    justify-content: space-between;
+}
