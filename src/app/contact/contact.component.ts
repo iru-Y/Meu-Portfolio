@@ -6,10 +6,11 @@ import { LinkComponent } from "../components/link/link.component";
 
 @Component({
   selector: 'app-contact',
-  imports: [TitleComponent, NgOptimizedImage, ContactCardComponent, LinkComponent],
+  imports: [TitleComponent, ContactCardComponent, LinkComponent],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
+
 export class ContactComponent {
 
 }
