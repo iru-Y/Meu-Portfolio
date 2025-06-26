@@ -1,11 +1,11 @@
 .asterisk {
   position: absolute;
-  top: 4789.8px;
+  top: 4200.8px;
   right: -43.2px;
 }
 
 .my-projects-section {
-  padding: 126px 201.6px 90px 201.6px;
+  padding: var(--global-padding)
 }
 
 header {
@@ -16,4 +16,10 @@ header {
 .show-cards {
   display: flex;
   justify-content: space-between;
+}
+
+.view-more{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }

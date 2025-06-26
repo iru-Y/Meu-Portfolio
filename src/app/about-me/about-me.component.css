@@ -1,5 +1,5 @@
 .body-section {
-  padding: 10vh 14vw 0px 14vw;
+  padding: 90px 201.6px 0px 201.6px;
   display: flex;
 }
 
@@ -26,16 +26,16 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  margin-top: 8vh;
+  margin-top: 72px;
 }
 
 .grid-status-one {
   display: flex;
-  gap: 1.5vw;
-  margin-bottom: 1.5vw;
+  gap: 21.6px;
+  margin-bottom: 21.6px;
 }
 
 .grid-status-two {
   display: flex;
-  gap: 1.5vw;
+  gap: 21.6px;
 }

@@ -1,6 +1,6 @@
 .asterisk {
   position: absolute;
-  top: 2989.8px;
+  top: 2544px;
   left: -43.2px;
 }
 
@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   gap: 72px;
-  padding: 126px 201.6px 90px 201.6px;
+  padding: var(--global-padding);
 }
 
 .skills-card-section {

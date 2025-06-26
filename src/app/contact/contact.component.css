@@ -1,0 +1,16 @@
+.contact-section {
+  display: flex;
+  padding: var(--global-padding);
+}
+
+.contact-now{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.btn{
+  display: flex;
+  gap: 15px;
+}
