@@ -1,21 +1,19 @@
-.asterisk{
+.asterisk {
   position: absolute;
-  top: 532.2vh;
-  right: -3vw;
-  
+  top: 4789.8px;
+  right: -43.2px;
 }
 
-.my-projects-section{
-    padding: 14vh 14vw 10vh 14vw;    
+.my-projects-section {
+  padding: 126px 201.6px 90px 201.6px;
 }
 
-header{
-    display: flex;
-    justify-content: center;
+header {
+  display: flex;
+  justify-content: center;
 }
 
-.show-cards{
-    display: flex;
-    justify-content: space-between;
-
+.show-cards {
+  display: flex;
+  justify-content: space-between;
 }

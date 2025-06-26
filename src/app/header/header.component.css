@@ -1,5 +1,5 @@
 .header-section {
-  padding-top: 2.5vh;
+  padding-top: 22.5px;
 }
 
 .group-hi {
@@ -43,7 +43,6 @@
 .best-skills {
   display: flex;
   flex-direction: row;
-
   align-items: start;
 }
 
@@ -59,7 +58,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-left: 16vw;
+  margin-left: 230.4px;
   font-size: 36px;
 }
 
@@ -97,21 +96,20 @@
   position: relative;
   width: 130px;
   height: 100px;
-  left: 4vw;
-  top: 10vh;
+  left: 57.6px;
+  top: 90px;
 }
 
 .me {
   position: relative;
-  width: 58vw;
-  height: 58vh;
-  top: 15vh;
-  right: 2vw;
+  width: 835.2px;
+  height: 522px;
+  top: 135px;
+  right: 28.8px;
 }
 
 .asterisk {
   position: absolute;
   top: 650px;
   right: -75px;
-  
 }
