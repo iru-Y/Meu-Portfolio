@@ -1,5 +1,5 @@
 .body-section {
-  padding: 90px 201.6px 0px 201.6px;
+  padding: var(--global-padding);
   display: flex;
 }
 

@@ -4,7 +4,7 @@
   align-items: start;
   padding: 27px 28.8px 27px 28.8px;
   height: 224px;
-  border: 1px solid var(--border-color);
+  border: var(--border);
   border-radius: 5px;
   background-color: var(--primary-container-color);
 }
@@ -12,7 +12,7 @@
 .card-top-icon {
   position: relative;
   padding: 10px 10px;
-  border: 1px solid var(--border-color);
+  border: var(--border);
   border-radius: 5px;
   background-color: var(--top-card-bg);
   bottom: 58.5px;

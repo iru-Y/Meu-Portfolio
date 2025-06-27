@@ -1,6 +1,6 @@
 .live-demo-card {
   display: flex;
-  border: 1px solid var(--border-color);
+  border: var(--border);
   border-radius: 8px;
   margin-top: 36px;
   padding: 7.2px;

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { SubmitBtnComponent } from "../submit-btn/submit-btn.component";
 
 @Component({
   selector: 'app-form-contact',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, SubmitBtnComponent],
   templateUrl: './form-contact.component.html',
   styleUrl: './form-contact.component.css',
 })
