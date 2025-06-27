@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { LinkComponent } from "../components/link/link.component";
-import { StatusComponent } from "../components/status/status.component";
-import { TitleComponent } from "../components/title/title.component";
+import { LinkComponent } from '../link/link.component';
+import { StatusComponent } from '../status/status.component';
+import { TitleComponent } from '../title/title.component';
 
 @Component({
   selector: 'app-about-me',

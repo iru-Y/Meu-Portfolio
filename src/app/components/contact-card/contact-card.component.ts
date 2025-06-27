@@ -1,5 +1,5 @@
 import { NgOptimizedImage } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-contact-card',
@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './contact-card.component.css'
 })
 export class ContactCardComponent {
+  @Input() title: string = '';
+  @Input() subTitle: string = '';
 
 }

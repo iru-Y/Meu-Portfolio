@@ -1,7 +1,6 @@
-import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
-import { TitleComponent } from "../components/title/title.component";
-import { BestServicesCardComponent } from "../components/best-services-card/best-services-card.component";
+import { BestServicesCardComponent } from '../best-services-card/best-services-card.component';
+import { TitleComponent } from '../title/title.component';
 
 @Component({
   selector: 'app-works',
