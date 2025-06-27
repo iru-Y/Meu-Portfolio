@@ -1,6 +1,7 @@
 .contact-section {
   display: flex;
   padding: var(--global-padding);
+  gap: 50px;
 }
 
 .contact-now{

@@ -10,5 +10,6 @@ import { Component, Input } from '@angular/core';
 export class ContactCardComponent {
   @Input() title: string = '';
   @Input() subTitle: string = '';
-
+  @Input() contactAsset: string = '';
+  @Input() href: string = '';
 }

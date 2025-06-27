@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
-import { LinkComponent } from '../../link/link.component';
-import { LiveDemoCardComponent } from '../../live-demo-card/live-demo-card.component';
-import { TitleComponent } from '../../title/title.component';
+import { LinkComponent } from '../../components/link/link.component';
+import { LiveDemoCardComponent } from './components/live-demo-card/live-demo-card.component';
+import { TitleComponent } from '../../components/title/title.component';
 
 @Component({
   selector: 'app-my-projects',

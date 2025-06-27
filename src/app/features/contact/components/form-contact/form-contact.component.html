@@ -8,10 +8,12 @@
     </div>
     <input type="text" id="email" [placeholder]="'EMAIL'" />
     <input type="text" id="subject" [placeholder]="'ASSUNTO'" />
-    <input type="text" id="message" [placeholder]="'MESSAGEM'" class="message"/>
+    <textarea
+      id="message"
+      formControlName="message"
+      placeholder="MENSAGEM"
+      class="message"
+    ></textarea>
   </form>
-  <app-submit-btn
-  text="ENVIAR"
-  
-  />
+  <app-submit-btn text="ENVIAR" />
 </div>

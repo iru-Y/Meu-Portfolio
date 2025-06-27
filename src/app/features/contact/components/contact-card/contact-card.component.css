@@ -15,7 +15,7 @@
 }
 
 .contact-card:hover {
-    background-color: var(--secondary-color);
+     filter: brightness(1.3);
 }
 
 .img-icon {
