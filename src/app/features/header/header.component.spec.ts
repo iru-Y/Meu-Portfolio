@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HeaderComponent } from './header.component';
-import { LinkComponent } from '../../components/link/link.component';
+import { LinkComponent } from '../../shared/components/link/link.component';
 
 describe('HeaderComponent', () => {
   let component: HeaderComponent;

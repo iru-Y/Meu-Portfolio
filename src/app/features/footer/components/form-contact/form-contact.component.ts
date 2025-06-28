@@ -5,7 +5,7 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { SubmitBtnComponent } from '../../../../components/submit-btn/submit-btn.component';
+import { SubmitBtnComponent } from '../../../../shared/components/submit-btn/submit-btn.component';
 
 @Component({
   selector: 'app-form-contact',

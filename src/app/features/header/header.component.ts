@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
-import { LinkComponent } from '../../components/link/link.component';
+import { LinkComponent } from '../../shared/components/link/link.component';
 
 @Component({
   selector: 'app-header',

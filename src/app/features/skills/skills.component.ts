@@ -1,7 +1,7 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
-import { LinkComponent } from '../../components/link/link.component';
-import { TitleComponent } from '../../components/title/title.component';
+import { LinkComponent } from '../../shared/components/link/link.component';
+import { TitleComponent } from '../../shared/components/title/title.component';
 import { SkillCardComponent } from './components/skill-card/skill-card.component';
 
 

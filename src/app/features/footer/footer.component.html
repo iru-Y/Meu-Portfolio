@@ -1,5 +1,7 @@
-<section class="contact-section">
-  <div class="contact-now">
+<section>
+ 
+  <div class="contact">
+     <div class="contact-now">
     <app-title
       title="ENTRE EM CONTATO"
       subTitle="ENTRE EM CONTATO"
@@ -32,4 +34,18 @@
   </div>
 
   <app-form-contact />
+  </div>
+
+
+<footer>
+
+ @for (item of footerLinks; track $index) {
+   <app-link-btn 
+  [imgSrc]="item.imgSrc"
+  [text]="item.text"
+  />
+ }
+
+</footer>
+
 </section>
