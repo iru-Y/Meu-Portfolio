@@ -13,12 +13,24 @@ import { LinkBtnComponent } from "./components/link-btn/link-btn.component";
 })
 
 export class FooterComponent {
-  path: string = 'icons/'
+  path: string = '/icons/'
 
   footerLinks =[
     {
-      imgSrc: `${this.path}intagram.png`,
-      text: 'INSGRAM'
+      imgSrc: `${this.path}instagram.svg`,
+      text: 'INSTAGRAM'
+    },
+    {
+      imgSrc: `${this.path}instagram.svg`,
+      text: 'INSTAGRAM'
+    },
+    {
+      imgSrc: `${this.path}instagram.svg`,
+      text: 'INSTAGRAM'
+    },
+    {
+      imgSrc: `${this.path}instagram.svg`,
+      text: 'INSTAGRAM'
     }
   ]
 
