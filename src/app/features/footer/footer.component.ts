@@ -17,8 +17,17 @@ export class FooterComponent {
 
   footerLinks =[
     {
-      imgSrc: `${this.path}intagram.png`,
-      text: 'INSGRAM'
+      imgSrc: `${this.path}instagram.svg`,
+      text: 'INSTAGRAM'
+    },{
+      imgSrc: `${this.path}instagram.svg`,
+      text: 'INSTAGRAM'
+    },{
+      imgSrc: `${this.path}instagram.svg`,
+      text: 'INSTAGRAM'
+    },{
+      imgSrc: `${this.path}instagram.svg`,
+      text: 'INSTAGRAM'
     }
   ]
 

@@ -27,40 +27,29 @@
     </app-link>
   </div>
 
-  <div class="grid-status">
-    <div class="grid-status-one">
+ <div class="grid-status">
+  <div class="grid-status-one">
+    @for (status of statusListOne; track status) {
       <app-status
-        total="12K"
-        result="All Project Completed"
-        width="250px"
-        height="120px"
-      >
-      </app-status>
-
-      <app-status
-        total="12K"
-        result="All Project Completed"
-        width="170px"
-        height="120px"
-      >
-      </app-status>
-    </div>
-
-    <div class="grid-status-two">
-      <app-status
-        total="12K"
-        result="All Project Completed"
-        width="170px"
-        height="120px"
-      >
-      </app-status>
-      <app-status
-        total="12K"
-        result="All Project Completed"
-        width="250px"
-        height="120px"
-      >
-      </app-status>
-    </div>
+        [total]="status.total"
+        [result]="status.result"
+        [width]="status.width"
+        [height]="status.height"
+      ></app-status>
+    }
   </div>
+
+  <div class="grid-status-two">
+    @for (status of statusListTwo; track status) {
+      <app-status
+        [total]="status.total"
+        [result]="status.result"
+        [width]="status.width"
+        [height]="status.height"
+      ></app-status>
+    }
+  </div>
+</div>
+
+
 </section>
