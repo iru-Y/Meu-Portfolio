@@ -12,5 +12,12 @@ import { SkillCardComponent } from './components/skill-card/skill-card.component
   styleUrl: './skills.component.css'
 })
 export class SkillsComponent {
+skills = [
+  { title: 'Flutter', projects: 'balb balbalbalbal', cardWidth: '15vw', topIconPath: '/icons/flutter.png' },
+  { title: 'Flutter', projects: 'balb balbalbalbal', cardWidth: '15vw', topIconPath: '/icons/flutter.png' },
+  { title: 'Flutter', projects: 'balb balbalbalbal', cardWidth: '32vw', topIconPath: '/icons/flutter.png' },
+  { title: 'Flutter', projects: 'balb balbalbalbal', cardWidth: '15vw', topIconPath: '/icons/flutter.png' },
+  { title: 'Flutter', projects: 'balb balbalbalbal', cardWidth: '15vw', topIconPath: '/icons/flutter.png' }
+];
 
 }

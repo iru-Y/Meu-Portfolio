@@ -19,6 +19,7 @@ export class FooterComponent {
     {
       imgSrc: `${this.path}instagram.svg`,
       text: 'INSTAGRAM'
+<<<<<<< HEAD
     },
     {
       imgSrc: `${this.path}instagram.svg`,
@@ -29,6 +30,15 @@ export class FooterComponent {
       text: 'INSTAGRAM'
     },
     {
+=======
+    },{
+      imgSrc: `${this.path}instagram.svg`,
+      text: 'INSTAGRAM'
+    },{
+      imgSrc: `${this.path}instagram.svg`,
+      text: 'INSTAGRAM'
+    },{
+>>>>>>> developement
       imgSrc: `${this.path}instagram.svg`,
       text: 'INSTAGRAM'
     }

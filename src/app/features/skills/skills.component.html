@@ -9,63 +9,48 @@
 
   <section class="skills-card-section">
     <div class="card-row">
+      @for (card of skills.slice(0, 2); track card) {
       <app-skill-card
-        title="Flutter"
-        projects="balb balbalbalbal"
-        cardWidth="15vw"
-        topIconPath="/icons/flutter.png"
+        [title]="card.title"
+        [projects]="card.projects"
+        [cardWidth]="card.cardWidth"
+        [topIconPath]="card.topIconPath"
       ></app-skill-card>
-      <app-skill-card
-        title="Flutter"
-        projects="balb balbalbalbal"
-        cardWidth="15vw"
-        topIconPath="/icons/flutter.png"
-      ></app-skill-card>
+      }
     </div>
+
     <app-skill-card
-      title="Flutter"
-      projects="balb balbalbalbal"
-      cardWidth="32vw"
-      topIconPath="/icons/flutter.png"
+      [title]="skills[2].title"
+      [projects]="skills[2].projects"
+      [cardWidth]="skills[2].cardWidth"
+      [topIconPath]="skills[2].topIconPath"
     ></app-skill-card>
 
     <div class="card-row">
-
+      @for (card of skills.slice(3, 5); track card) {
       <app-skill-card
-        title="Flutter"
-        projects="balb balbalbalbal"
-        cardWidth="15vw"
-        topIconPath="/icons/flutter.png"
+        [title]="card.title"
+        [projects]="card.projects"
+        [cardWidth]="card.cardWidth"
+        [topIconPath]="card.topIconPath"
       ></app-skill-card>
-      <app-skill-card
-        title="Flutter"
-        projects="balb balbalbalbal"
-        cardWidth="15vw"
-        topIconPath="/icons/flutter.png"
-      ></app-skill-card>
-
+      }
     </div>
-
   </section>
 
   <section class="my-skills-text">
-
     <app-title
-    subTitle="AS MINHAS MELHORES "
-    detach="HABILIDADES E EXPERIENCIAS"
-    title="MINHAS HABILIDADES"
-    description="Lorem Ipsum is simply dummy text of the printing  remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing  remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing  remaining essentially unchanged."
+      subTitle="AS MINHAS MELHORES "
+      detach="HABILIDADES E EXPERIENCIAS"
+      title="MINHAS HABILIDADES"
+      description="Lorem Ipsum is simply dummy text of the printing  remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing  remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing  remaining essentially unchanged."
     >
-
     </app-title>
 
-    <app-link path="https://www.linkedin.com/in/yurisousadev/"
-    text="ENTRE EM CONTATO"
+    <app-link
+      path="https://www.linkedin.com/in/yurisousadev/"
+      text="ENTRE EM CONTATO"
     >
-
-
     </app-link>
-
   </section>
-
 </section>

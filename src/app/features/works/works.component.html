@@ -6,70 +6,17 @@
   >
   </app-title>
 
-  <div class="row-services">
-    <app-best-services-card
-      widthCard="30vw"
-      title="Flutter"
-      subTitle="Lorem Ipsum is simply dummy text of the printing  remaining essentially unchanged. "
-      altText="flutter"
-      imgPath="/icons/flutter.png"
-    >
-    </app-best-services-card>
-
-    <app-best-services-card
-      widthCard="40vw"
-      title="Flutter"
-      subTitle="Lorem Ipsum is simply dummy text of the printing  remaining essentially unchanged. "
-      altText="flutter"
-      imgPath="/icons/flutter.png"
-    >
-    </app-best-services-card>
-  </div>
-
-  <div class="row-services">
-    <app-best-services-card
-      widthCard="22.66vw"
-      title="Flutter"
-      subTitle="Lorem Ipsum is simply dummy text of the printing  remaining essentially unchanged. "
-      altText="flutter"
-      imgPath="/icons/flutter.png"
-    >
-    </app-best-services-card
-    ><app-best-services-card
-      widthCard="22.66vw"
-      title="Flutter"
-      subTitle="Lorem Ipsum is simply dummy text of the printing  remaining essentially unchanged. "
-      altText="flutter"
-      imgPath="/icons/flutter.png"
-    >
-    </app-best-services-card
-    ><app-best-services-card
-      widthCard="22.66vw"
-      title="Flutter"
-      subTitle="Lorem Ipsum is simply dummy text of the printing  remaining essentially unchanged. "
-      altText="flutter"
-      imgPath="/icons/flutter.png"
-    >
-    </app-best-services-card>
-  </div>
-
-   <div class="row-services">
-    <app-best-services-card
-      widthCard="35vw"
-      title="Flutter"
-      subTitle="Lorem Ipsum is simply dummy text of the printing  remaining essentially unchanged. "
-      altText="flutter"
-      imgPath="/icons/flutter.png"
-    >
-    </app-best-services-card
-    ><app-best-services-card
-      widthCard="35vw"
-      title="Flutter"
-      subTitle="Lorem Ipsum is simply dummy text of the printing  remaining essentially unchanged. "
-      altText="flutter"
-      imgPath="/icons/flutter.png"
-    >
-    </app-best-services-card
-    >
-  </div>
+   @for (row of bestServices; track row) {
+    <div class="row-services">
+      @for (card of row; track card) {
+        <app-best-services-card
+          [widthCard]="card.widthCard"
+          [title]="card.title"
+          [subTitle]="card.subTitle"
+          [altText]="card.altText"
+          [imgPath]="card.imgPath"
+        ></app-best-services-card>
+      }
+    </div>
+  }
 </section>
