@@ -1,4 +1,4 @@
-.header-section {
+header-section {
   padding-top: 22.5px;
 }
 
@@ -16,6 +16,11 @@
     list-style: none;
   }
 }
+.whoami ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
 
 .skill-icon {
   margin-bottom: 5px;
@@ -28,12 +33,28 @@
 }
 
 .logo {
-  ul {
-    display: flex;
-    list-style: none;
-    padding: 0 150px;
-    justify-content: space-between;
-  }
+  display: flex;
+  list-style: none;
+  margin-top: 1rem;
+  padding: 0 150px;
+  justify-content: space-between;
+}
+
+.logo p {
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.navbar {
+  width: 50%;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
 }
 
 .group-habilities {
