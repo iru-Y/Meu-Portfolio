@@ -12,4 +12,15 @@ import { TitleComponent } from '../../shared/components/title/title.component';
 })
 export class MyProjectsComponent {
 
+  cardsSection1 = [
+  { width: '23vw', height: '30vh', img: 'https://placehold.co/200x200/EEE/31343C' },
+  { width: '23vw', height: '30vh', img: 'https://placehold.co/200x200/EEE/31343C' },
+  { width: '23vw', height: '30vh', img: 'https://placehold.co/200x200/EEE/31343C' }
+];
+
+cardsSection2 = [
+  { width: '35vw', height: '40vh', img: 'https://placehold.co/200x200/EEE/31343C' },
+  { width: '35vw', height: '40vh', img: 'https://placehold.co/200x200/EEE/31343C' }
+];
+
 }

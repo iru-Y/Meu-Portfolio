@@ -17,34 +17,23 @@
   </header>
 
   <div class="show-cards">
+    @for (card of cardsSection1; track card) {
     <app-live-demo-card
-      cardWidth="23vw"
-      cardHeight="30vh"
-      imgPath="https://placehold.co/200x200/EEE/31343C"
-    />
-    <app-live-demo-card
-      cardWidth="23vw"
-      cardHeight="30vh"
-      imgPath="https://placehold.co/200x200/EEE/31343C"
-    />
-    <app-live-demo-card
-      cardWidth="23vw"
-      cardHeight="30vh"
-      imgPath="https://placehold.co/200x200/EEE/31343C"
-    />
+      [cardWidth]="card.width"
+      [cardHeight]="card.height"
+      [imgPath]="card.img"
+    ></app-live-demo-card>
+    }
   </div>
 
   <div class="show-cards">
+    @for (card of cardsSection2; track card) {
     <app-live-demo-card
-      cardWidth="35vw"
-      cardHeight="40vh"
-      imgPath="https://placehold.co/200x200/EEE/31343C"
-    />
-    <app-live-demo-card
-      cardWidth="35vw"
-      cardHeight="40vh"
-      imgPath="https://placehold.co/200x200/EEE/31343C"
-    />
+      [cardWidth]="card.width"
+      [cardHeight]="card.height"
+      [imgPath]="card.img"
+    ></app-live-demo-card>
+    }
   </div>
 
   <div class="view-more">

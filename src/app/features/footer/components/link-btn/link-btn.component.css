@@ -1,5 +1,6 @@
 a{
     color: white;
+    text-decoration: none;
 }
 
 div{
@@ -7,6 +8,7 @@ div{
     justify-content: space-around;
     align-items: center;
     padding: 10px;
+    margin: 2px;
     width: 130px;
     height: 45px;
     border: var(--border);
