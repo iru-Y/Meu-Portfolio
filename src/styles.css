@@ -34,3 +34,12 @@ img {
   height: auto;
   display: block;
 }
+
+@media (max-width: 1080px) {
+  :root {
+    --global-padding: 2rem;
+  }
+  body{
+    overflow-x: hidden;
+  }
+}

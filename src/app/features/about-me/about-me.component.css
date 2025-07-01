@@ -39,3 +39,11 @@
   display: flex;
   gap: 21.6px;
 }
+
+
+@media (max-width: 1080px) {
+  .body-section{
+    display: flex;
+    flex-direction: column;
+  }
+}

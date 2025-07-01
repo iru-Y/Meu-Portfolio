@@ -10,11 +10,6 @@ header-section {
 .whoami {
   display: flex;
   flex-direction: column;
-  ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-  }
 }
 .whoami ul {
   display: flex;
@@ -34,16 +29,33 @@ header-section {
 
 .logo {
   display: flex;
-  list-style: none;
-  margin-top: 1rem;
-  padding: 0 150px;
   justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 150px;
+  background-color: var(--body-color);
+  z-index: 1000;
 }
 
 .logo p {
   font-weight: 900;
   font-size: 1.5rem;
   color: var(--secondary-color);
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.logo a:hover {
+  color: white;
 }
 
 .navbar {
@@ -54,9 +66,13 @@ header-section {
   display: flex;
   justify-content: space-around;
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
   list-style: none;
 }
-
+.navbar li:hover {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
 .group-habilities {
   display: flex;
 }
@@ -133,4 +149,96 @@ header-section {
   position: absolute;
   top: 650px;
   right: -75px;
+  display: block;
+}
+
+@media (max-width: 1080px) {
+  .logo {
+    padding: 1rem 20px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .logo p {
+    font-size: 1.2rem;
+  }
+
+  .navbar {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-left: 0;
+  }
+
+  .group-hi {
+    flex-direction: column;
+    margin: 100px 20px;
+    gap: 20px;
+  }
+
+  .hi-section {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    font-size: 24px;
+    padding: 0 10px;
+  }
+
+  .apresentation {
+    font-size: 18px;
+  }
+
+  .my-name {
+    font-size: 2rem;
+  }
+
+  .about-apresentation {
+    font-size: 16px;
+  }
+
+  .me {
+    width: 100%;
+    height: auto;
+    right: 40px;
+    top: 20px;
+  }
+
+  .arrow-me {
+    width: 80px;
+    height: 60px;
+    left: 0;
+    top: 10px;
+  }
+
+  .group-habilities {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .best-skills {
+    flex-direction: row;
+  }
+
+  .habilities {
+    writing-mode: horizontal-tb;
+    transform: none;
+    padding: 0;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .asterisk {
+    width: 20px;
+    height: 20px;
+  }
+
+  .center-title {
+    padding: 0 10px;
+  }
 }

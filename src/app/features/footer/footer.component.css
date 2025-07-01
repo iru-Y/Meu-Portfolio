@@ -1,13 +1,14 @@
-section{
+footer{
   display: flex;
   flex-direction: column;
   gap: 50px;
-  padding: 8rem 12.5rem 2rem 12.5rem;
+  padding: 8rem 12.5rem 1rem 12.5rem;
 
 }
 
 .contact {
   display: flex;
+  align-items: center;
   gap: 50px;
 }
 
@@ -47,5 +48,7 @@ footer p {
 }
 
 .asterisk {
-  position: relative;
+  position: absolute;
+  top: 5100px;
+  left:-43.2px;
 }
