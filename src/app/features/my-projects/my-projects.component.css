@@ -23,3 +23,11 @@ header {
   justify-content: center;
   margin-top: 50px;
 }
+
+@media (max-width: 1080px) {
+   .asterisk {
+    display: none;
+    width: 20px;
+    height: 20px;
+  }
+}
