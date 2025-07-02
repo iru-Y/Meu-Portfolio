@@ -8,25 +8,19 @@
   />
   
   <section class="skills-card-section">
-    <div class="card-row">
-      @for (card of skills.slice(0, 5); track card) {
-      <app-skill-card
-        [title]="card.title"
-        [projects]="card.projects"
-        [topIconPath]="card.topIconPath"
-      ></app-skill-card>
-      }
-    </div>
-<!-- 
-    <div class="card-row">
-      @for (card of skills.slice(2, 4); track card) {
-      <app-skill-card
-        [title]="card.title"
-        [projects]="card.projects"
-        [topIconPath]="card.topIconPath"
-      ></app-skill-card>
-      }
-    </div> -->
+  <div class="carousel-container">
+  <button class="arrow left" (click)="prevSlide()">←</button>
+
+  <div class="slide">
+    <img [src]="skills[currentIndex].topIconPath" [alt]="skills[currentIndex].title" width="100" />
+    <h2>{{ skills[currentIndex].title }}</h2>
+    <p>{{ skills[currentIndex].projects }}</p>
+  </div>
+
+  <button class="arrow right" (click)="nextSlide()">→</button>
+</div>
+
+
   </section>
 
   <section class="my-skills-text">
@@ -44,4 +38,3 @@
     >
     </app-link>
   </section>
-</section>

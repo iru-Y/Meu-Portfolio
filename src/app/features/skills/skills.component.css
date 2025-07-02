@@ -28,6 +28,35 @@
   gap: 27px;
 }
 
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.slide {
+  text-align: center;
+  width: 300px;
+  background: var(--primary-container-color);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  color: var(--secondary-color);
+}
+
+
 @media (max-width: 1080px) {
   .asterisk{
     display: none;
