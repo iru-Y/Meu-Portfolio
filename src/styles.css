@@ -26,7 +26,7 @@ body {
   --top-card-border-icon-bg: #484848;
   --global-padding: 8rem 12.5rem 5.5rem 12.5rem;
   --header-padding: 13.5rem 2rem 5rem 2rem;
-  --cardWith:  330.8px;;
+  --cardWith: 330.8px;
 }
 
 img {
@@ -40,8 +40,7 @@ img {
     --global-padding: 2rem;
     --cardWith: 80vw;
     overflow-x: hidden;
-    --header-padding: 4.3rem 2rem 9rem
-    
+    --header-padding: 4.3rem 2rem 9rem;
   }
 
   img {

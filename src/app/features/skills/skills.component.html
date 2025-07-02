@@ -12,7 +12,7 @@
   <button class="arrow left" (click)="prevSlide()">←</button>
 
   <div class="slide">
-    <img [src]="skills[currentIndex].topIconPath" [alt]="skills[currentIndex].title" width="100" />
+    <img class="card-top-icon" [src]="skills[currentIndex].topIconPath" [alt]="skills[currentIndex].title" width="100" />
     <h2>{{ skills[currentIndex].title }}</h2>
     <p>{{ skills[currentIndex].projects }}</p>
   </div>

@@ -13,9 +13,9 @@ export class SkillsComponent {
   currentIndex = 0;
 
   skills = [
-    { title: 'Flutter', projects: 'Descrição Flutter', topIconPath: '/icons/flutter.png' },
-    { title: 'Angular', projects: 'Descrição Angular', topIconPath: '/icons/angular.png' },
-    { title: 'React', projects: 'Descrição React', topIconPath: '/icons/react.png' }
+    { title: 'Flutter', projects: 'Flutter', topIconPath: '/icons/flutter.png' },
+    { title: 'Angular', projects: 'Angular', topIconPath: '/icons/angular.png' },
+    { title: 'Java', projects: 'JAVA', topIconPath: '/icons/java.png' }
   ];
 
   prevSlide() {
