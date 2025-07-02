@@ -1,6 +1,6 @@
 .asterisk {
   position: absolute;
-  top: 2670px;
+  top: 2154px;
   left: -43.2px;
 }
 
@@ -26,4 +26,15 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
+}
+
+@media (max-width: 1080px) {
+  .asterisk{
+    display: none;
+  }
+  .skills-section{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: var(--global-padding);
+  }
 }

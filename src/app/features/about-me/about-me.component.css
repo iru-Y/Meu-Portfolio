@@ -40,10 +40,13 @@
   gap: 21.6px;
 }
 
-
 @media (max-width: 1080px) {
-  .body-section{
+  .body-section {
     display: flex;
     flex-direction: column;
+  }
+  .grid-status {
+    display: flex;
+    align-items: center;
   }
 }

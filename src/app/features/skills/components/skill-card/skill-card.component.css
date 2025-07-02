@@ -7,6 +7,7 @@
   border-radius: 5px;
   background-color: var(--primary-container-color);
   height: 135px;
+  width: 15vw;
 }
 
 .card-top-icon {

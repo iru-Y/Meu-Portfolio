@@ -1,11 +1,12 @@
 .asterisk {
   position: absolute;
-  top: 4200.8px;
+  top: 3215.8px;
   right: -43.2px;
 }
 
 .my-projects-section {
-  padding: var(--global-padding)
+  padding: var(--global-padding);
+  background-color: var(--secondary-body-color);
 }
 
 header {
@@ -18,14 +19,14 @@ header {
   justify-content: space-between;
 }
 
-.view-more{
+.view-more {
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
 
 @media (max-width: 1080px) {
-   .asterisk {
+  .asterisk {
     display: none;
     width: 20px;
     height: 20px;
