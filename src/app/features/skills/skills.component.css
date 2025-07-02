@@ -6,7 +6,6 @@
 
 .skills-section {
   display: flex;
-  align-items: center;
   gap: 72px;
   padding: var(--global-padding);
 }
@@ -19,6 +18,7 @@
 
 .card-row {
   display: flex;
+  flex-direction: column;
   gap: 28.8px;
 }
 

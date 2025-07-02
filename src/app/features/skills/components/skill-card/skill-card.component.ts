@@ -8,7 +8,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './skill-card.component.css'
 })
 export class SkillCardComponent {
-  @Input() cardWidth: string = '';
   @Input() title: string = '';
   @Input() projects: string = '';
   @Input() topIconPath: string = '';

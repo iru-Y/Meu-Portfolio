@@ -1,32 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background: var(--body-color);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   overflow-x: hidden;
 }
 
 :root {
-    --background-icon: #313131;
-    --body-color: #161616;
-    --secondary-body-color: #222222;
-    --secondary-color: #adea2d;
-    --border: 1px solid #4b4b4b;
-    --primary-container-color: #242424;
-    --secondary-container-color: #343434;
-    --top-card-bg: #404040;
-    --top-card-border-icon-bg: #484848;
-    --global-padding: 8rem 12.5rem 5.5rem 12.5rem;
-
+  --background-icon: #313131;
+  --body-color: #161616;
+  --secondary-body-color: #222222;
+  --secondary-color: #adea2d;
+  --border: 1px solid #4b4b4b;
+  --primary-container-color: #242424;
+  --secondary-container-color: #343434;
+  --top-card-bg: #404040;
+  --top-card-border-icon-bg: #484848;
+  --global-padding: 8rem 12.5rem 5.5rem 12.5rem;
+  --header-padding: 13.5rem 2rem 5rem 2rem;
+  --cardWith:  330.8px;;
 }
 
 img {
@@ -38,12 +38,15 @@ img {
 @media (max-width: 1080px) {
   :root {
     --global-padding: 2rem;
+    --cardWith: 80vw;
     overflow-x: hidden;
+    --header-padding: 4.3rem 2rem 9rem
+    
   }
-  
+
   img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 }

@@ -4,7 +4,7 @@ header-section {
 
 .group-hi {
   display: flex;
-  margin: 220px 40px 110px 40px;
+  padding: var(--header-padding);
 }
 
 .whoami {
@@ -170,7 +170,7 @@ header-section {
 
   .group-hi {
     flex-direction: column-reverse;
-    margin: 100px 20px;
+    padding: var(--header-padding);
     gap: 20px;
   }
 
