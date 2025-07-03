@@ -85,7 +85,7 @@ header-section {
 
 .habilities {
   font-size: 15px;
-  padding: 8px 10px 0px 10px;
+  padding: 8px 10px 20px 10px;
   writing-mode: sideways-rl;
   transform: rotate(180deg);
   color: white;

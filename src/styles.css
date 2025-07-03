@@ -27,6 +27,8 @@ body {
   --global-padding: 8rem 12.5rem 5.5rem 12.5rem;
   --header-padding: 13.5rem 2rem 5rem 2rem;
   --cardWith: 330.8px;
+  --first-projects-card-width: 331.2px;
+  --second-projects-card-width: 470.2px;
 }
 
 img {

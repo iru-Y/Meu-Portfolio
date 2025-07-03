@@ -7,6 +7,14 @@
   align-items: center;
   justify-content: center;
   background-color: var(--secondary-body-color);
+  height: 255px;
+}
+.live-demo-card.first {
+  width: var(--first-projects-card-width);
+}
+
+.live-demo-card.second {
+  width: var(--second-projects-card-width);
 }
 
 img {

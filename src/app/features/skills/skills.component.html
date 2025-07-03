@@ -9,25 +9,40 @@
 
   <section class="skills-card-section">
     <div class="carousel-container">
-      <div class="slide">
+      <div class="slide" [ngClass]="{ 'slide-hover': hoveringArrow }">
         <img
           class="card-top-icon"
           [src]="skills[currentIndex].topIconPath"
           width="100"
         />
-        <p>{{ skills[currentIndex].projects }}</p>
+        <p [ngClass]="{ 'text-hover': hoveringArrow }">{{ skills[currentIndex].projects }}</p>
       </div>
     </div>
+
     <div class="group-arrow">
-      <button class="arrow left" (click)="prevSlide()">←</button>
-      <button class="arrow right" (click)="nextSlide()">→</button>
+      <button
+        class="arrow left"
+        (mouseenter)="onArrowHover(true)"
+        (mouseleave)="onArrowHover(false)"
+        (click)="prevSlide()"
+      >
+        ←
+      </button>
+      <button
+        class="arrow right"
+        (mouseenter)="onArrowHover(true)"
+        (mouseleave)="onArrowHover(false)"
+        (click)="nextSlide()"
+      >
+        →
+      </button>
     </div>
   </section>
 
   <section class="my-skills-text">
     <app-title
       subTitle="AS MINHAS MELHORES "
-      detach="HABILIDADES E EXPERIENCIAS"
+      detach="HABILIDADES"
       title="MINHAS HABILIDADES"
       description="Lorem Ipsum is simply dummy text of the printing  remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing  remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing  remaining essentially unchanged."
     >

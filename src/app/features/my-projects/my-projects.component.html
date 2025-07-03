@@ -19,9 +19,8 @@
   <div class="show-cards">
     @for (card of cardsSectionOne; track card) {
     <app-live-demo-card
-      [cardWidth]="card.width"
-      [cardHeight]="card.height"
       [imgPath]="card.img"
+      [isFirstCard]="true"
     ></app-live-demo-card>
     }
   </div>
@@ -29,9 +28,8 @@
   <div class="show-cards">
     @for (card of cardsSectionTwo; track card) {
     <app-live-demo-card
-      [cardWidth]="card.width"
-      [cardHeight]="card.height"
       [imgPath]="card.img"
+      [isFirstCard]="false"
     ></app-live-demo-card>
     }
   </div>

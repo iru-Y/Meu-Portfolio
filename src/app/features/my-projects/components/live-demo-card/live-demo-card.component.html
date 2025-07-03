@@ -1,5 +1,4 @@
-<div class="live-demo-card" [style.width]="cardWidth" [style.height]="cardHeight">
-
-    <img [ngSrc]="imgPath" width="1000" height="1000" >
-
+<div class="live-demo-card" [ngClass]="{ 'first': isFirstCard, 'second': !isFirstCard }" >
+  <img [ngSrc]="imgPath" width="1000" height="1000" />
 </div>
+ 
