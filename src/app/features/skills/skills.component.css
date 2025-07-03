@@ -13,7 +13,6 @@
 .skills-card-section {
   display: flex;
   flex-direction: column;
-  gap: 54px;
 }
 
 .card-row {
@@ -45,6 +44,7 @@
   border: var(--border);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .card-top-icon {
   position: relative;
   width: 70px;
@@ -53,10 +53,19 @@
   border: 1px solid var(--top-card-border-icon-bg);
   border-radius: 3px;
   background-color: var(--top-card-bg);
-  bottom: 40px;
+  bottom: 50px;
 }
+
+.group-arrow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
 .arrow {
   background-color: transparent;
+  color: white;
   border: none;
   font-size: 2rem;
   cursor: pointer;

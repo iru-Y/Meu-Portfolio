@@ -6,21 +6,22 @@
     width="230"
     height="230"
   />
-  
+
   <section class="skills-card-section">
-  <div class="carousel-container">
-  <button class="arrow left" (click)="prevSlide()">←</button>
-
-  <div class="slide">
-    <img class="card-top-icon" [src]="skills[currentIndex].topIconPath" [alt]="skills[currentIndex].title" width="100" />
-    <h2>{{ skills[currentIndex].title }}</h2>
-    <p>{{ skills[currentIndex].projects }}</p>
-  </div>
-
-  <button class="arrow right" (click)="nextSlide()">→</button>
-</div>
-
-
+    <div class="carousel-container">
+      <div class="slide">
+        <img
+          class="card-top-icon"
+          [src]="skills[currentIndex].topIconPath"
+          width="100"
+        />
+        <p>{{ skills[currentIndex].projects }}</p>
+      </div>
+    </div>
+    <div class="group-arrow">
+      <button class="arrow left" (click)="prevSlide()">←</button>
+      <button class="arrow right" (click)="nextSlide()">→</button>
+    </div>
   </section>
 
   <section class="my-skills-text">
@@ -38,3 +39,4 @@
     >
     </app-link>
   </section>
+</section>

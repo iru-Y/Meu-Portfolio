@@ -13,9 +13,9 @@ export class SkillsComponent {
   currentIndex = 0;
 
   skills = [
-    { title: 'Flutter', projects: 'Flutter', topIconPath: '/icons/flutter.png' },
-    { title: 'Angular', projects: 'Angular', topIconPath: '/icons/angular.png' },
-    { title: 'Java', projects: 'JAVA', topIconPath: '/icons/java.png' }
+    {projects: 'Lorem Ipsum is simply dummy text of the printing remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing remaining essentially unchanged', topIconPath: '/icons/flutter.png' },
+    {projects: 'AnLorem Ipsum is simply dummy text of the printing remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing remaining essentially unchangedgular', topIconPath: '/icons/angular.png' },
+    {projects: 'JALorem Ipsum is simply dummy text of the printing remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing remaining essentially unchangedVA', topIconPath: '/icons/java.png' }
   ];
 
   prevSlide() {
