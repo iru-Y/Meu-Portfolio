@@ -1,58 +1,57 @@
 <footer id="contact">
-    <img ngSrc="/assets/asterisk.png" alt="asterisco" class="asterisk" width="230" height="230"/>
+  <img
+    ngSrc="/assets/asterisk.png"
+    alt="asterisco"
+    class="asterisk"
+    width="230"
+    height="230"
+  />
 
   <div class="contact">
-     <div class="contact-now">
-    <app-title
-      title="ENTRE EM CONTATO"
-      subTitle="ENTRE EM CONTATO"
-      detach="AGORA"
-      description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-    />
-
-    <div class="btn">
-      <app-contact-card
-      contactAsset="/icons/phone.png"
-      title="WHATSAPP"
-      subTitle="(99)991542276"
-      href="https://api.whatsapp.com/send?phone=99991542276"
+    <div class="contact-now">
+      <app-title
+        title="ENTRE EM CONTATO"
+        subTitle="ENTRE EM CONTATO"
+        detach="AGORA"
+        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
       />
 
-      <app-contact-card 
-      contactAsset="/icons/linkedin.png"
-      title="LINKEDIN"
-      subTitle="Yuri Matthewus"
-      href="https://www.linkedin.com/in/yurisousadev/"
+      <div class="btn">
+        <app-contact-card
+          contactAsset="/icons/phone.png"
+          title="WHATSAPP"
+          subTitle="(99)991542276"
+          href="https://api.whatsapp.com/send?phone=99991542276"
+        />
+
+        <app-contact-card
+          contactAsset="/icons/linkedin.png"
+          title="LINKEDIN"
+          subTitle="Yuri Matthewus"
+          href="https://www.linkedin.com/in/yurisousadev/"
+        />
+      </div>
+
+      <app-link
+        path="/doc/meu_currículo.docx"
+        icon="/icons/download.png"
+        altText="download-cv"
+        text="DOWNLOAD CV"
       />
     </div>
 
-    <app-link
-      path="/doc/meu_currículo.docx"
-      icon="/icons/download.png"
-      altText="download-cv"
-      text="DOWNLOAD CV"
-    />
+    <app-form-contact />
   </div>
 
-  <app-form-contact />
-  </div>
+  <footer>
+    <div class="btn">
+      @for (item of footerLinks; track $index) {
+      <app-link-btn [imgSrc]="item.imgSrc" [text]="item.text" />
 
+      }
+    </div>
+    <div class="divider"></div>
 
-<footer>
-<div class="btn">
- @for (item of footerLinks; track $index) {
-  <app-link-btn 
-  [imgSrc]="item.imgSrc"
-  [text]="item.text"
-  />
-
- }
-  </div>
- <div class="divider">
-
- </div>
-
- <p>&copy; 2025 Yuri Matthewus. Todos os direitos reservados.</p>
-
-</footer>
+    <p>&copy; 2025 Yuri Matthewus. Todos os direitos reservados.</p>
+  </footer>
 </footer>

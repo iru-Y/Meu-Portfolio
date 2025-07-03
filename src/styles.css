@@ -29,6 +29,7 @@ body {
   --cardWith: 330.8px;
   --first-projects-card-width: 331.2px;
   --second-projects-card-width: 470.2px;
+  --footer-padding: 8rem 12.5rem 1rem 12.5rem;
 }
 
 img {
@@ -43,6 +44,9 @@ img {
     --cardWith: 80vw;
     overflow-x: hidden;
     --header-padding: 4.3rem 2rem 9rem;
+    --first-projects-card-width: 231.2px;
+    --second-projects-card-width: 470.2px;
+    --footer-padding: 8rem 2rem 2.5rem;
   }
 
   img {

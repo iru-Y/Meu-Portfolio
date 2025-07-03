@@ -2,8 +2,7 @@ footer{
   display: flex;
   flex-direction: column;
   gap: 50px;
-  padding: 8rem 12.5rem 1rem 12.5rem;
-
+  padding: var(--footer-padding);
 }
 
 .contact {
@@ -24,13 +23,6 @@ footer{
   gap: 15px;
 }
 
-footer{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
-}
 .btn {
   display: flex;
   flex-direction: row;
@@ -51,4 +43,33 @@ footer p {
   position: absolute;
   top: 4000px;
   left:-43.2px;
+}
+
+@media (max-width: 1080px) {
+  .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: var(--footer-padding);
+}
+.asterisk{
+  display: none;
+}
+.contact-now{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+}
+app-link {
+    display: flex;
+    justify-content: center;
+  }
 }
