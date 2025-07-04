@@ -28,14 +28,11 @@ export class MyProjectsComponent {
     return this.screenWidth <= 1080;
   }
 
-  cardsSectionOne = [
+  cardsSection = [
+    { img: 'https://placehold.co/100x200/EEE/31343C' },
     { img: 'https://placehold.co/200x200/EEE/31343C' },
-    { img: 'https://placehold.co/200x200/EEE/31343C' },
-    { img: 'https://placehold.co/200x200/EEE/31343C' },
-  ];
-
-  cardsSectionTwo = [
-    { img: 'https://placehold.co/200x200/EEE/31343C' },
-    { img: 'https://placehold.co/200x200/EEE/31343C' },
+    { img: 'https://placehold.co/300x200/EEE/31343C' },
+    { img: 'https://placehold.co/400x200/EEE/31343C' },
+    { img: 'https://placehold.co/500x200/EEE/31343C' },
   ];
 }
