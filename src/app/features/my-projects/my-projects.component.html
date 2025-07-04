@@ -16,23 +16,26 @@
     />
   </header>
 
+  @if (!isMobile) {
+
   <div class="show-cards">
     @for (card of cardsSectionOne; track card) {
-    <app-live-demo-card
-      [imgPath]="card.img"
-      [isFirstCard]="true"
-    ></app-live-demo-card>
+    <app-live-demo-card [imgPath]="card.img" [isFirstCard]="true" />
     }
   </div>
 
   <div class="show-cards">
     @for (card of cardsSectionTwo; track card) {
-    <app-live-demo-card
-      [imgPath]="card.img"
-      [isFirstCard]="false"
-    ></app-live-demo-card>
+    <app-live-demo-card [imgPath]="card.img" [isFirstCard]="false" />
     }
   </div>
+  } @else {
+  <div class="show-cards">
+    @for (card of cardsSectionOne; track card) {
+    <app-live-demo-card [imgPath]="card.img" [isFirstCard]="true" />
+    }
+  </div>
+  }
 
   <div class="view-more">
     <app-link

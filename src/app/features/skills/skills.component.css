@@ -59,9 +59,7 @@
   background-color: var(--top-card-bg);
   bottom: 50px;
 }
-.text-hover {
-  color: var(--secondary-color);
-}
+
 .group-arrow {
   display: flex;
   align-items: center;

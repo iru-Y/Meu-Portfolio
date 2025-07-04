@@ -24,3 +24,17 @@ img {
   overflow: hidden;
   object-fit: cover;
 }
+
+@media (max-width: 1080px) {
+  .live-demo-card {
+    display: flex;
+    border: var(--border);
+    border-radius: 8px;
+    margin-top: 36px;
+    padding: 7.2px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-body-color);
+    height: 255px;
+  }
+}

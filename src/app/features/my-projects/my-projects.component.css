@@ -31,4 +31,8 @@ header {
     width: 20px;
     height: 20px;
   }
+  .show-cards{
+    display: flex;
+    flex-direction: column;
+  }
 }

@@ -3,6 +3,8 @@ footer{
   flex-direction: column;
   gap: 50px;
   padding: var(--footer-padding);
+  align-items: center;
+  justify-content: center;
 }
 
 .contact {
@@ -41,7 +43,7 @@ footer p {
 
 .asterisk {
   position: absolute;
-  top: 4000px;
+  top: 3690px;
   left:-43.2px;
 }
 

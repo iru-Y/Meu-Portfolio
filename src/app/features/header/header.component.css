@@ -36,7 +36,7 @@ header-section {
   left: 0;
   width: 100%;
   padding: 1rem 150px;
-  background-color: var(--body-color);
+   background-color: rgba(1, 1, 1, 0.4);;
   z-index: 1000;
 }
 

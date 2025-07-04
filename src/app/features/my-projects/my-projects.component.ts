@@ -16,6 +16,18 @@ import { TitleComponent } from '../../shared/components/title/title.component';
   styleUrl: './my-projects.component.css',
 })
 export class MyProjectsComponent {
+  screenWidth = window.innerWidth;
+
+  ngOnInit() {
+    window.addEventListener('resize', () => {
+      this.screenWidth = window.innerWidth;
+    });
+  }
+
+  get isMobile(): boolean {
+    return this.screenWidth <= 1080;
+  }
+
   cardsSectionOne = [
     { img: 'https://placehold.co/200x200/EEE/31343C' },
     { img: 'https://placehold.co/200x200/EEE/31343C' },
