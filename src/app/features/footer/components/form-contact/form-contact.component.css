@@ -73,3 +73,24 @@ app-submit-btn {
 h1 {
   font-size: 36px;
 }
+
+@media (max-width: 800px) {
+  .form-contact {
+    width: 300px;
+}
+input {
+  height: 40px;
+  
+}
+h1 {
+  font-size: 1.2rem;
+}
+.message {
+  font-size: 0.5rem;
+  height: 75px;
+  
+}
+input::placeholder {
+   font-size: 0.5rem;
+}
+}

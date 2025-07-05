@@ -22,10 +22,16 @@ span {
 
 @media (max-width: 1080px) {
   div {
-    width: 100px;
-    height: 45px;
+    width: 75px;
+    height: 35px;
+  
   }
   span {
-  font-size: 0.5rem;
+  font-size: 0.35rem;
 }
+img{
+  width: 10px;
+  height: 10px;
+}
+
 }
