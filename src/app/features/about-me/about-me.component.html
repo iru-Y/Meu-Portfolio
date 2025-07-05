@@ -1,6 +1,5 @@
 <section class="body-section" id="about">
   <div class="about">
-    
     <app-title
       title="SOBRE MIM"
       subTitle="MELHOR DESENVOLVEDOR"
@@ -13,10 +12,10 @@
     />
 
     <ul class="skills">
-      <li><span class="check">✔</span> FrontEnd</li>
-      <li><span class="check">✔</span> Backend</li>
-      <li><span class="check">✔</span> Mobile</li>
-      <li><span class="check">✔</span> Sistemas Operacionais</li>
+      <li><span>✔</span> FrontEnd</li>
+      <li><span>✔</span> Backend</li>
+      <li><span>✔</span> Mobile</li>
+      <li><span>✔</span> Sistemas Operacionais</li>
     </ul>
 
     <app-link
@@ -27,29 +26,25 @@
     </app-link>
   </div>
 
- <div class="grid-status">
-  <div class="grid-status-one">
-    @for (status of statusListOne; track status) {
+  <div class="grid-status">
+    <div class="grid-status-one">
+      @for (status of statusListOne; track status) {
       <app-status
+        [style.width]="status.width"
         [total]="status.total"
         [result]="status.result"
-        [width]="status.width"
-        [height]="status.height"
       ></app-status>
-    }
-  </div>
+      }
+    </div>
 
-  <div class="grid-status-two">
-    @for (status of statusListTwo; track status) {
+    <div class="grid-status-two">
+      @for (status of statusListTwo; track status) {
       <app-status
+        [style.width]="status.width"
         [total]="status.total"
         [result]="status.result"
-        [width]="status.width"
-        [height]="status.height"
       ></app-status>
-    }
+      }
+    </div>
   </div>
-</div>
-
-
 </section>

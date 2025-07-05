@@ -36,7 +36,7 @@ header-section {
   left: 0;
   width: 100%;
   padding: 1rem 150px;
-   background-color: rgba(1, 1, 1, 0.4);;
+  background-color: rgba(1, 1, 1, 0.4);
   z-index: 1000;
 }
 
@@ -100,7 +100,7 @@ header-section {
 }
 
 .apresentation {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: "Roboto";
 }
 
@@ -152,7 +152,7 @@ header-section {
   display: block;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 800px) {
   .logo {
     flex-direction: column;
     align-items: flex-start;
@@ -171,33 +171,37 @@ header-section {
   .group-hi {
     flex-direction: column-reverse;
     padding: var(--header-padding);
-    gap: 20px;
   }
 
   .hi-section {
     margin-left: 0;
     font-size: 16px;
-    padding: 20px 10px;
+    padding: 20px 0px;
     margin-bottom: 50px;
+    gap: 30px;
   }
-
+  .hi-section h1 {
+    font-size: 1rem;
+  }
   .apresentation,
   .about-apresentation {
-    font-size: 16px;
+    font-size: 0.8rem;
   }
 
   .my-name {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .me {
-    left: -90px;
+    left: -50px;
+    height: 340px;
+    top: 20px;
   }
 
   .arrow-me {
-    width: 130px;
-    height: 80px;
-    left: 40px;
+    width: 90px;
+    height: 50px;
+    left: 20px;
     top: 0;
   }
 
@@ -206,8 +210,11 @@ header-section {
   }
 
   .habilities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-size: 12px;
-    padding: 0 10px 15px;
   }
 
   .asterisk {
@@ -215,6 +222,8 @@ header-section {
   }
 
   .center-title {
+    display: flex;
+    align-items: start;
     padding: 0 10px;
   }
 }

@@ -1,0 +1,31 @@
+
+
+:root {
+  --background-icon: #313131;
+  --body-color: #161616;
+  --secondary-body-color: #222222;
+  --secondary-color: #adea2d;
+  --border: 1px solid #4b4b4b;
+  --primary-container-color: #242424;
+  --secondary-container-color: #343434;
+  --top-card-bg: #404040;
+  --top-card-border-icon-bg: #484848;
+  --global-padding: 8rem 12.5rem 5.5rem 12.5rem;
+  --header-padding: 13.5rem 2rem 5rem 2rem;
+  --cardWith: 330.8px;
+  --first-projects-card-width: 331.2px;
+  --second-projects-card-width: 470.2px;
+  --footer-padding: 8rem 12.5rem 1rem 12.5rem;
+}
+
+@media (max-width: 800px) {
+    :root {
+      overflow-x: hidden;
+    --global-padding: 2rem;
+    --cardWith: 80vw;
+    --header-padding: 4.3rem 2rem 9rem;
+    --first-projects-card-width: 420.2px;
+    --footer-padding: 8rem 0rem 1rem 0rem;
+  }
+
+}

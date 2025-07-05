@@ -8,8 +8,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './status.component.css'
 })
 export class StatusComponent {
-  @Input() width:string = '';
-  @Input() height:string = '';
   @Input() total:string = '';
   @Input() result:string = '';
 }
