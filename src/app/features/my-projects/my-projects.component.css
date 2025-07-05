@@ -25,7 +25,7 @@ header {
   margin-top: 50px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 800px) {
   .asterisk {
     display: none;
     width: 20px;
@@ -33,12 +33,11 @@ header {
   }
   .show-cards {
     height: 765px;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-y: auto;
-    overflow-x: hidden;
-    margin: 0;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -49,7 +48,5 @@ header {
   app-live-demo-card {
     flex: 0 0 auto;
     scroll-snap-align: start;
-    width: 80%;
-    max-width: 300px;
   }
 }
