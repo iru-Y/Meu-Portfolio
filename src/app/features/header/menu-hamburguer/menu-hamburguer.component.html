@@ -1,3 +1,21 @@
+@if(isOpen){
+<div class="menu">
+  <ul>
+    <li (click)="onLinkClick('about')">
+      <img ngSrc="/assets/asterisk.png" width="20" height="5" /> SOBRE
+    </li>
+    <li (click)="onLinkClick('skills')">
+      <img ngSrc="/assets/asterisk.png" width="20" height="5" />HABILIDADES
+    </li>
+    <li (click)="onLinkClick('projects')">
+      <img ngSrc="/assets/asterisk.png" width="20" height="5" />PROJETOS
+    </li>
+    <li (click)="onLinkClick('contact')">
+      <img ngSrc="/assets/asterisk.png" width="20" height="5" />CONTATO
+    </li>
+  </ul>
+</div>
+} @if (!isOpen) {
 <img
   ngSrc="/icons/hamburger.png"
   alt="hamburger"
@@ -6,13 +24,13 @@
   height="20"
   (click)="toggleMenu()"
 />
-
-
-@if(isOpen){
-     <ul>
-        <li (click)="onLinkClick('about')">SOBRE</li>
-        <li (click)="onLinkClick('skills')">HABILIDADES</li>
-        <li (click)="onLinkClick('projects')">PROJETOS</li>
-        <li (click)="onLinkClick('contact')">CONTATO</li>
-      </ul>
+} @else {
+<img
+  ngSrc="/icons/close.png"
+  alt="hamburger"
+  class="hamburger"
+  width="10"
+  height="10"
+  (click)="toggleMenu()"
+/>
 }

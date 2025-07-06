@@ -19,5 +19,6 @@ export class MenuHamburguerComponent {
 
   onLinkClick(id: string) {
     this.scroll.scrollTo(id);
+    this.isOpen = false;
   }
 }
