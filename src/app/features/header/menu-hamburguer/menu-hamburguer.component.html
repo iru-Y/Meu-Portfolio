@@ -1,0 +1,18 @@
+<img
+  ngSrc="/icons/hamburger.png"
+  alt="hamburger"
+  class="hamburger"
+  width="20"
+  height="20"
+  (click)="toggleMenu()"
+/>
+
+
+@if(isOpen){
+     <ul>
+        <li (click)="onLinkClick('about')">SOBRE</li>
+        <li (click)="onLinkClick('skills')">HABILIDADES</li>
+        <li (click)="onLinkClick('projects')">PROJETOS</li>
+        <li (click)="onLinkClick('contact')">CONTATO</li>
+      </ul>
+}

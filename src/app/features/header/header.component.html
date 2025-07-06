@@ -1,14 +1,19 @@
 <section class="header-section" id="header">
   <div class="logo">
-        <a (click)="scrollTo('header')">YURI MATTHEWUS</a>
-        <nav class="navbar">
-          <ul>
-          <li (click)="scrollTo('about')">SOBRE</li>
-          <li (click)="scrollTo('skills')">HABILIDADES</li>
-          <li (click)="scrollTo('projects')">PROJETOS</li>
-          <li (click)="scrollTo('contact')">CONTATO</li>
-        </ul>
-        </nav>
+    <a (click)="onLinkClick('header')">YURI MATTHEWUS</a>
+
+    @if(isMobile) {
+    <app-menu-hamburguer />
+    } @else {
+    <nav class="navbar">
+      <ul>
+        <li (click)="onLinkClick('about')">SOBRE</li>
+        <li (click)="onLinkClick('skills')">HABILIDADES</li>
+        <li (click)="onLinkClick('projects')">PROJETOS</li>
+        <li (click)="onLinkClick('contact')">CONTATO</li>
+      </ul>
+    </nav>
+    }
   </div>
 
   <header class="group-hi">
@@ -17,26 +22,68 @@
         <div class="best-skills">
           <ul>
             <li>
-              <img ngSrc="/icons/java.png" alt="java" class="skill-icon" width="40" height="40"/>
+              <img
+                ngSrc="/icons/java.png"
+                alt="java"
+                class="skill-icon"
+                width="40"
+                height="40"
+              />
             </li>
             <li>
-              <img ngSrc="/icons/flutter.png" alt="flutter" class="skill-icon" width="40" height="40"/>
+              <img
+                ngSrc="/icons/flutter.png"
+                alt="flutter"
+                class="skill-icon"
+                width="40"
+                height="40"
+              />
             </li>
             <li>
-              <img ngSrc="/icons/angular.png" alt="angular" class="skill-icon" width="40" height="40"/>
+              <img
+                ngSrc="/icons/angular.png"
+                alt="angular"
+                class="skill-icon"
+                width="40"
+                height="40"
+              />
             </li>
             <li>
-              <img ngSrc="/icons/docker.png" alt="docker" class="skill-icon" width="40" height="40"/>
+              <img
+                ngSrc="/icons/docker.png"
+                alt="docker"
+                class="skill-icon"
+                width="40"
+                height="40"
+              />
             </li>
-             <li>
-              <img ngSrc="/icons/linux.png" alt="linux" class="skill-icon" width="40" height="40"/>
+            <li>
+              <img
+                ngSrc="/icons/linux.png"
+                alt="linux"
+                class="skill-icon"
+                width="40"
+                height="40"
+              />
             </li>
           </ul>
 
           <span class="habilities"> Principais Habilidades: </span>
 
-          <img ngSrc="/icons/arrow-loop-left.png" alt="arrow" class="arrow-me" width="130" height="100" />
-          <img ngSrc="/icons/me1.png" alt="eu" class="me" width="1114" height="626"/>
+          <img
+            ngSrc="/icons/arrow-loop-left.png"
+            alt="arrow"
+            class="arrow-me"
+            width="130"
+            height="100"
+          />
+          <img
+            ngSrc="/icons/me1.png"
+            alt="eu"
+            class="me"
+            width="1114"
+            height="626"
+          />
         </div>
         <div class="hi-section">
           <p class="apresentation">
@@ -46,15 +93,21 @@
             Programadores e artistas são os únicos profissionais que têm como
             <span class="hobby">HOBBY</span> a própria profissão. <br />
           </h1>
-            <app-link
-              path="/doc/meu_currículo.docx"
-              icon="/icons/download.png"
-              altText="download-cv"
-              text="DOWNLOAD CV"
-            />
+          <app-link
+            path="/doc/meu_currículo.docx"
+            icon="/icons/download.png"
+            altText="download-cv"
+            text="DOWNLOAD CV"
+          />
         </div>
       </div>
     </div>
-   <img ngSrc="/assets/asterisk.png" alt="asterisco" class="asterisk" width="230" height="230"/>
+    <img
+      ngSrc="/assets/asterisk.png"
+      alt="asterisco"
+      class="asterisk"
+      width="230"
+      height="230"
+    />
   </header>
 </section>
