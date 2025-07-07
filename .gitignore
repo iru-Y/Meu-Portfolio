@@ -1,15 +1,33 @@
 # --- FRONT-END ---
-/front-end/node_modules
-/front-end/dist
-/front-end/.angular/cache
-/front-end/tmp
-/front-end/out-tsc
+/frontend/node_modules
+/frontend/dist
+/frontend/.angular/cache
+/frontend/tmp
+/frontend/out-tsc
+
+
+# --- BACKEND ---
+/backend/portfolio-backend/target
+/backend/portfolio-backend/.mvn
+/backend/portfolio-backend/.idea
+/backend/portfolio-backend/*.iml
+/backend/portfolio-backend/*.log
+
+/backend/portfolio-backend/src/main/resources/application.yml
 
 # --- SHARED ---
+
 # Logs
-npm-debug.log
+npm-debug.log*
 yarn-error.log
 testem.log
+
+# Coverage reports
+/coverage
+
+# Cache & temp
+.sass-cache/
+/.history/*
 
 # System files
 .DS_Store
@@ -31,9 +49,6 @@ Thumbs.db
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# Others
+# Lock files
 /connect.lock
 /libpeerconnection.log
-/coverage
-.sass-cache/
-.history/*
