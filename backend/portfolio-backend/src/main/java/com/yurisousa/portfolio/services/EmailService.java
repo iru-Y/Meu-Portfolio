@@ -1,4 +1,4 @@
-package com.yurisousa.portfolio.service;
+package com.yurisousa.portfolio.services;
 
 import com.yurisousa.portfolio.dto.ContactFormDto;
 import org.springframework.mail.SimpleMailMessage;
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class EmailService {
 
-    private JavaMailSender javaMailSender;
+    private final JavaMailSender javaMailSender;
 
     public EmailService(JavaMailSender javaMailSender) {
         this.javaMailSender = javaMailSender;
@@ -26,5 +26,4 @@ public class EmailService {
         );
         javaMailSender.send(message);
     }
-
 }
