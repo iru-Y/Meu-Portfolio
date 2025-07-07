@@ -4,7 +4,7 @@
 /frontend/.angular/cache
 /frontend/tmp
 /frontend/out-tsc
-
+/frontend/.env
 
 # --- BACKEND ---
 /backend/portfolio-backend/target

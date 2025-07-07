@@ -1,3 +1,3 @@
-export const environment = {
-    api_path: 'http://192.168.1.18:4200'
+export const environment: EnvironmentInterface = {
+  apiPath: import.meta.env.API_PATH
 };
