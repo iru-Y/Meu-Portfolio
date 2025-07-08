@@ -1,19 +1,41 @@
 <div class="form-contact">
   <h1>DEIXE SUA MENSAGEM</h1>
 
-  <form [formGroup]="contactForm">
+  <form [formGroup]="contactForm" (ngSubmit)="submit()">
     <div class="first-row">
-      <input type="text" id="name" [placeholder]="'NOME COMPLETO'" />
-      <input type="text" id="phone" [placeholder]="'TELEFONE'" />
+      <input
+        type="text"
+        id="name"
+        formControlName="name"
+        [placeholder]="'NOME COMPLETO'"
+      />
+      <input
+        type="text"
+        id="phone"
+        formControlName="phone"
+        [placeholder]="'TELEFONE'"
+      />
     </div>
-    <input type="text" id="email" [placeholder]="'EMAIL'" />
-    <input type="text" id="subject" [placeholder]="'ASSUNTO'" />
+    <input
+      type="text"
+      id="email"
+      formControlName="email"
+      [placeholder]="'EMAIL'"
+    />
+    <input
+      type="text"
+      id="subject"
+      formControlName="subject"
+      [placeholder]="'ASSUNTO'"
+    />
     <textarea
       id="message"
       formControlName="message"
       placeholder="MENSAGEM"
       class="message"
     ></textarea>
+    <div class="btn">
+      <button type="submit" [disabled]="contactForm.invalid">ENVIAR</button>
+    </div>
   </form>
-  <app-submit-btn text="ENVIAR" />
 </div>

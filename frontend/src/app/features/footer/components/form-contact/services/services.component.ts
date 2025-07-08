@@ -1,20 +1,17 @@
-import { Component } from "@angular/core";
+import { Component, Injectable } from "@angular/core";
 import { environment } from "../../../../../../environments/environment.development";
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
 
-@Component({
-  selector: "app-services",
-  imports: [],
-  templateUrl: "./services.component.html",
-  styleUrl: "./services.component.css",
+@Injectable({
+  providedIn: "root",
 })
 export class ServicesComponent {
   private apiPath = environment.apiPath;
 
   constructor(private http: HttpClient) {}
 
-  sendDate(
+  sendData(
     name: string,
     phone: string,
     email: string,

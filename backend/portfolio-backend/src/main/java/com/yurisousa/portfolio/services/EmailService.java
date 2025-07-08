@@ -18,7 +18,7 @@ public class EmailService {
 
     public void sendContactEmail (ContactFormDto contactFormDto){
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setTo();
+        message.setTo("yuri_matteus@hotmail.com");
         message.setSubject("Nova mensagem do contato: " + contactFormDto.subject());
         message.setText(
                 "Nome: " + contactFormDto.name() + "\n" +
