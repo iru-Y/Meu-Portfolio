@@ -1,4 +1,4 @@
-interface FormContactInterface{
+export interface FormContactInterface{
     name: string;
     phone: string;
     email: string;

@@ -5,12 +5,13 @@ import {
   ReactiveFormsModule,
   Validators,
 } from "@angular/forms";
-import { ServicesComponent } from "./services/services.component";
+import { FormContactService } from "./services/form-contact.service";
+import { HttpClientModule } from "@angular/common/http";
 
 @Component({
   selector: "app-form-contact",
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, HttpClientModule],
   templateUrl: "./form-contact.component.html",
   styleUrls: ["./form-contact.component.css"], // ✅ corrigido: styleUrls (com s)
 })
@@ -19,7 +20,7 @@ export class FormContactComponent {
   @Output("submit") onSubmit = new EventEmitter();
   contactForm!: FormGroup;
 
-  constructor(private services: ServicesComponent) {
+  constructor(private services: FormContactService) {
     this.contactForm = new FormGroup({
       name: new FormControl("", [Validators.required]),
       email: new FormControl("", [Validators.required, Validators.email]),

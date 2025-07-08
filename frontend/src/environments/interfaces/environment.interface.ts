@@ -1,3 +1,3 @@
-interface EnvironmentInterface{
+export interface EnvironmentInterface{
     apiPath: string;
 }
