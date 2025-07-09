@@ -17,7 +17,7 @@ import { HttpClientModule } from "@angular/common/http";
 })
 export class FormContactComponent {
   @Input() text: string = "";
-  @Output("submit") onSubmit = new EventEmitter();
+  @Output("sent") onSubmit = new EventEmitter();
   contactForm!: FormGroup;
 
   constructor(private services: FormContactService) {
@@ -25,15 +25,29 @@ export class FormContactComponent {
       name: new FormControl("", [Validators.required]),
       email: new FormControl("", [Validators.required, Validators.email]),
       phone: new FormControl("", [
-        Validators.pattern("^\\(\\d{2}\\)\\s9\\d{4}-\\d{4}$"),
+        (control) => {
+          const v = control.value as string;
+          if (!v) return null;
+          const valid = /^\(\d{2}\)\s9\d{4}-\d{4}$/.test(v);
+          return valid ? null : { pattern: true }; 
+        },
       ]),
+
       subject: new FormControl("", [Validators.required]),
       message: new FormControl("", [Validators.maxLength(1000)]),
     });
   }
 
-  submit(): void {
+  sent() {
     if (this.contactForm.valid) {
+       console.log("STATUS:", this.contactForm.status);
+  console.log("ERROS:", this.contactForm.errors, {
+    name: this.contactForm.get("name")?.errors,
+    email: this.contactForm.get("email")?.errors,
+    phone: this.contactForm.get("phone")?.errors,
+    subject: this.contactForm.get("subject")?.errors,
+    message: this.contactForm.get("message")?.errors,
+  });
       const formData = this.contactForm.value;
       console.log("Enviando dados:", formData);
 
@@ -43,7 +57,7 @@ export class FormContactComponent {
         },
         error: (err) => {
           console.error("Erro ao enviar:", err);
-        }
+        },
       });
     } else {
       this.contactForm.markAllAsTouched();

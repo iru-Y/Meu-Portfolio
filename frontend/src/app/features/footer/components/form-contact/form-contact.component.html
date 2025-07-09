@@ -1,7 +1,7 @@
 <div class="form-contact">
   <h1>DEIXE SUA MENSAGEM</h1>
 
-  <form [formGroup]="contactForm" (ngSubmit)="submit()">
+  <form [formGroup]="contactForm" (ngSubmit)="sent()">
     <div class="first-row">
       <input
         type="text"
@@ -35,7 +35,7 @@
       class="message"
     ></textarea>
     <div class="btn">
-      <button type="submit" [disabled]="contactForm.invalid">ENVIAR</button>
+      <button type="submit" >ENVIAR</button>
     </div>
   </form>
 </div>

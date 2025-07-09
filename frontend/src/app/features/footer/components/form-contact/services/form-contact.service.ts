@@ -8,7 +8,7 @@ import { FormContactInterface } from "../interfaces/form.contact.interface";
   providedIn: "root",
 })
 export class FormContactService {
-  private apiPath = environment.apiPath;
+  private apiPath = `${environment.apiPath}/api/contact`;
 
   constructor(private http: HttpClient) {}
 
@@ -19,6 +19,8 @@ export class FormContactService {
     subject: string;
     message: string;
   }): Observable<FormContactInterface> {
+    console.log("API PATH →", this.apiPath);
+    console.log("Submit btn form");
     return this.http.post<FormContactInterface>(this.apiPath, data);
   }
 }
