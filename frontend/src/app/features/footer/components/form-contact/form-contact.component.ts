@@ -7,18 +7,21 @@ import {
 } from "@angular/forms";
 import { FormContactService } from "./services/form-contact.service";
 import { HttpClientModule } from "@angular/common/http";
+import { CommonModule } from "@angular/common";
 
 @Component({
   selector: "app-form-contact",
   standalone: true,
-  imports: [ReactiveFormsModule, HttpClientModule],
+  imports: [ReactiveFormsModule, HttpClientModule, CommonModule],
   templateUrl: "./form-contact.component.html",
-  styleUrls: ["./form-contact.component.css"], // ✅ corrigido: styleUrls (com s)
+  styleUrls: ["./form-contact.component.css"],
 })
 export class FormContactComponent {
   @Input() text: string = "";
   @Output("sent") onSubmit = new EventEmitter();
   contactForm!: FormGroup;
+
+  isLoading: boolean = false;
 
   constructor(private services: FormContactService) {
     this.contactForm = new FormGroup({
@@ -28,8 +31,8 @@ export class FormContactComponent {
         (control) => {
           const v = control.value as string;
           if (!v) return null;
-          const valid = /^\(\d{2}\)\s9\d{4}-\d{4}$/.test(v);
-          return valid ? null : { pattern: true }; 
+          const valid = /^9\d{10}$/.test(v);
+          return valid ? null : { pattern: true };
         },
       ]),
 
@@ -40,22 +43,29 @@ export class FormContactComponent {
 
   sent() {
     if (this.contactForm.valid) {
-       console.log("STATUS:", this.contactForm.status);
-  console.log("ERROS:", this.contactForm.errors, {
-    name: this.contactForm.get("name")?.errors,
-    email: this.contactForm.get("email")?.errors,
-    phone: this.contactForm.get("phone")?.errors,
-    subject: this.contactForm.get("subject")?.errors,
-    message: this.contactForm.get("message")?.errors,
-  });
+      this.isLoading = true;
+      console.log("STATUS:", this.contactForm.status);
+      console.log("ERROS:", this.contactForm.errors, {
+        name: this.contactForm.get("name")?.errors,
+        email: this.contactForm.get("email")?.errors,
+        phone: this.contactForm.get("phone")?.errors,
+        subject: this.contactForm.get("subject")?.errors,
+        message: this.contactForm.get("message")?.errors,
+      });
       const formData = this.contactForm.value;
       console.log("Enviando dados:", formData);
 
       this.services.sendData(formData).subscribe({
         next: (response) => {
+          this.isLoading = false;
+          this.onSubmit.emit();
+          this.contactForm.reset();
+          this.contactForm.markAsPristine();
+          this.contactForm.markAsUntouched();
           console.log("Enviado com sucesso:", response);
         },
         error: (err) => {
+          this.isLoading = false;
           console.error("Erro ao enviar:", err);
         },
       });

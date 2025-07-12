@@ -35,7 +35,13 @@
       class="message"
     ></textarea>
     <div class="btn">
-      <button type="submit" >ENVIAR</button>
+      <button type="submit">
+        @if (!isLoading){
+        <span>ENVIAR</span>
+        } @else {
+       <span class="spinner"></span>
+        }
+      </button>
     </div>
   </form>
 </div>
