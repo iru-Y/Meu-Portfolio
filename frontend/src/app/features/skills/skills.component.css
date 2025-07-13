@@ -38,6 +38,7 @@
   text-align: center;
   width: 400px;
   height: 300px;
+  font-size: 0.9rem;
   background: var(--primary-container-color);
   padding: 1rem;
   border-radius: 8px;
@@ -79,7 +80,7 @@
   color: var(--secondary-color);
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 800px) {
   .asterisk {
     display: none;
   }

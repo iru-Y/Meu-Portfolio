@@ -9,7 +9,9 @@
   height: 135px;
   width: var(--cardWith);
 }
-
+.card h1{
+  font-size: 10px;
+}
 .card-top-icon {
   position: relative;
   padding: 10px 10px;
@@ -19,7 +21,7 @@
   bottom: 22.5px;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 800px) {
   .card {
     display: flex;
     flex-direction: column;
