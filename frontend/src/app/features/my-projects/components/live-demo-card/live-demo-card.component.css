@@ -33,7 +33,7 @@ img {
   transition: filter 0.3s ease;
 }
 
-.live-demo-card:hover img {
+img.blurred {
   filter: blur(4px);
 }
 

@@ -4,10 +4,12 @@
   (mouseenter)="onHover(true)"
   (mouseleave)="onHover(false)"
 >
-  <img [ngSrc]="imgPath" width="1000" height="1000" />
+ <div class="image-container">
+   <img [ngSrc]="imgPath" width="1000" height="1000" [class.blurred]="isHovered"/>
   @if (isHovered) {
-   <button (click)="onClick">
-
+   <button (click)="onClick.emit()">
+      VER MAIS
    </button>
   }
+ </div>
 </div>
