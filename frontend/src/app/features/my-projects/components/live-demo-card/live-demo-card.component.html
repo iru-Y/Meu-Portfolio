@@ -1,4 +1,11 @@
-<div class="live-demo-card" [ngClass]="{ 'first': isFirstCard, 'second': !isFirstCard }" >
+<div
+  class="live-demo-card"
+  [ngClass]="{ first: isFirstCard, second: !isFirstCard }"
+  (mouseenter)="onHover(true)"
+  (mouseleave)="onHover(false)"
+>
   <img [ngSrc]="imgPath" width="1000" height="1000" />
+  @if (isHovered) {
+    <app-link ></app-link>
+  }
 </div>
- 
