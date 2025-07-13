@@ -8,7 +8,7 @@
   justify-content: center;
   background-color: var(--secondary-body-color);
   height: 255px;
-  position: relative; 
+  position: relative;
 }
 
 .live-demo-card.first {
@@ -30,29 +30,38 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: filter 0.3s ease; 
+  transition: filter 0.3s ease;
 }
-
 
 .live-demo-card:hover img {
   filter: blur(4px);
 }
-app-link {
+
+button {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 10px 20px;
-  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
   border: none;
-  border-radius: 4px;
+  font-weight: 700;
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
   cursor: pointer;
-  z-index: 2; 
+  z-index: 2;
   text-decoration: none;
 }
 
+
 @media (max-width: 1080px) {
   .live-demo-card {
-    height: 255px; 
+    height: 255px;
   }
 }
