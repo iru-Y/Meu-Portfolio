@@ -29,10 +29,10 @@ export class MyProjectsComponent {
   }
 
   cardsSection = [
-    { img: 'https://placehold.co/100x200/EEE/31343C' },
-    { img: 'https://placehold.co/200x200/EEE/31343C' },
-    { img: 'https://placehold.co/300x200/EEE/31343C' },
-    { img: 'https://placehold.co/400x200/EEE/31343C' },
+    { img: 'assets/draft-master.png' },
+    { img: 'assets/easy-os.png' },
     { img: 'https://placehold.co/500x200/EEE/31343C' },
+    { img: 'assets/zoe.png' },
+    { img: 'assets/agnus.png' },
   ];
 }
