@@ -94,9 +94,13 @@ header-section {
 .hi-section {
   display: flex;
   flex-direction: column;
+  width: 700px;
   gap: 30px;
   margin-left: 230.4px;
   font-size: 36px;
+}
+.hi-section h1{
+  font-size: 2rem;
 }
 
 .apresentation {
@@ -139,8 +143,6 @@ header-section {
 
 .me {
   position: relative;
-  width: 835px;
-  height: 522px;
   top: 43px;
   right: 28.8px;
 }
